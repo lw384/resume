@@ -37,7 +37,7 @@ jobs:
           node-version: "20"
           cache: ${{ steps.detect-package-manager.outputs.manager }}
       - name: Enable pnpm
-        run: corepack enable
+        run: npm install -g pnpm
       - name: Install dependencies
         run: pnpm install 
       - name: Generate Static Site
