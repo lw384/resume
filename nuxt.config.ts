@@ -7,5 +7,8 @@ export default defineNuxtConfig({
     output:{
       publicDir: path.join(__dirname,'docs')
     }
+  },
+  app:{
+    baseURL:"/resume/",
   }
 })
