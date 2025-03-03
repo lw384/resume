@@ -39,7 +39,7 @@ jobs:
       - name: Enable pnpm
         run: corepack enable
       - name: Install dependencies
-        run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
+        run: pnpm install 
       - name: Generate Static Site
         run: pnpm generate # 生成静态站点的命令
 
