@@ -14,7 +14,7 @@ on:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
-  contents: write
+  contents: read
   pages: write
   id-token: write
 
@@ -43,10 +43,10 @@ jobs:
       - name: Generate Static Site
         run: pnpm generate # 生成静态站点的命令
 
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4 # 这个 action 能将你的构建产物，作为新增内容提交到 gh-pages 分支
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          folder: .output/public # Nuxt3 生成的静态文件夹名称
+          path: .output/public
 
   # Deployment job
   deploy:
