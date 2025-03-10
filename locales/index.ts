@@ -43,55 +43,69 @@ interface ResumeContent {
 
 export const locales: Record<'zh' | 'en', ResumeContent> = {
   zh: {
-    name: '敖天羽',
-    status: '目前在职',
-    location: '上海',
-    role: '前端/后端/全栈开发',
+    name: '罗薇',
+    status: '求职中',
+    location: '北京',
+    role: 'Web 前端开发工程师',
     contact: {
-      phone: '1752127****',
-      email: 'beichu.zhang@gmail.com'
+      phone: '1565175****',
+      email: '15651756926@163.com'
     },
-    skillTags: ['Go', 'TypeScript', 'Node.js', 'Python', 'Vue'],
+    skillTags: [
+      'HTML', 'CSS/Less/Sass', 'JavaScript', 'TypeScript', 'Vue3', 'Vuex', 'React',
+      '小程序', 'Hybrid 开发', 'Echarts', 'Git', 'Webpack', '计算机网络', '算法结构', '数据库'
+    ],
     sections: {
       experience: {
         title: '工作经历',
         companies: [
           {
-            name: '字节跳动',
-            period: '2023-08 ~ 至今',
-            position: '技术专家',
-            techStack: ['Go', 'MySQL', 'MongoDB', 'Redis', 'RocketMQ'],
+            name: '理想汽车',
+            period: '2023.05 - 2024.05',
+            position: '前端工程师',
+            techStack: ['Vue', 'Echarts', 'CodeMirror', 'JSON-Schema'],
             projects: [
               {
-                title: '国际化改造',
+                title: '智能空间—车云服务组',
                 details: [
-                  '根据合规区域的规范对数据平台内大量业务域名进行迁移，设计切流方案并通过 DNS 劫持解决办公网和生产网需要指向不同七层代理的问题',
-                  '解决业务数据合规改造，为业务提出通用技术方案和整改流程，保证业务不因合规调导致业务不可用',
-                  '多语言方案升级：将数据平台内的多语言服务迁移至公司基建，提供整套从迁移到迭代的完整方案，为业务提供平滑过渡，并最终下线旧服务',
-                  '协助业务排查海外环境带来的一些访问问题，比如网站无法访问，白屏分析等等'
+                  '支持理想汽车整车 OTA 升级服务，抓取车端事故数据并进行数据治理。',
+                  '开发可视化 JSON-Schema 编辑器，实现 API 统一管理。',
+                  '封装 CodeMirror 及自定义表单，实现自定义日志分析工具。',
+                  '基于 Echarts 构建供应链数据可视化看板，提高故障追溯效率。'
                 ]
-              },
+              }
+            ]
+          },
+          {
+            name: '作业帮教育科技（北京）有限公司',
+            period: '2022.10 - 2023.02',
+            position: '前端工程师',
+            techStack: ['React', 'Material-UI', 'Vue3', 'Element Plus', 'Vite'],
+            projects: [
               {
-                title: '第三方 Cookie 解决方案',
+                title: '海外国际资讯内容社区',
                 details: [
-                  '尝试目前全部的三方 Cookie 解决方案，并对数据平台内的全部业务进行访谈和调研，最终抽象、整理和提供覆盖全部场景的多种解决方案'
+                  '参与 Web 主站建设，优化页面响应式适配。',
+                  '从 0 到 1 搭建国际版运营管理后台，实现内容管理与用户管理。',
+                  '封装滑动拼图验证码与 Lottie 动画渲染组件，提高开发效率。'
                 ]
-              },
+              }
+            ]
+          },
+          {
+            name: '工银科技有限公司',
+            period: '2019.07 - 2022.10',
+            position: 'Web 前端工程师',
+            techStack: ['Hybrid App', 'Vue', 'VantUI', 'Taro', 'Webpack', 'Element UI', 'Echarts'],
+            projects: [
               {
-                title: '协同服务',
+                title: '"我的宁夏"政务建设项目',
                 details: [
-                  '负责协同和同步服务的服务端开发，其中协同服务提供了引擎能力，解决开发冲突处理和数据获取；同步服务提供了保序和可靠性，通过推拉结合来解决长链大包传输问题。',
-                  '弱网优化通过公网域名来解决海外用户端到端失败率高导致协同不稳定的问题：成功率从 99.89% -> 99.99%',
-                  '可靠性治理，通过服务合并、链路简化、日志监控告警的治理等等，保证了服务 SLO >= 99.99%',
-                  '基于埋点数据开发，为业务提供包括了有效协同数、在线人数等业务指标以及一系列协同的技术指标看板'
-                ]
-              },
-              {
-                title: '消息中心',
-                details: [
-                  '数据平台内部消息中心服务重写，解决由于旧基建下线需要进行架构升级以及部署海外合规机房的问题，新旧服务切流过程中 0 业务影响',
-                  '旧服务链路混乱，由多个服务合并提供接口，且存在安全问题，重写后服务合并并通过安全检查',
-                  '服务从原本的故障之后无法自动恢复，必须人工干预，在重写后达到 SLO >= 99.99%，消息列表接口 P90 耗时从 80ms -> 8ms'
+                  '参与"我的宁夏"组件库建设，封装 10+ 组件。',
+                  '开发移动端 H5 支付款台，支持多种支付方式。',
+                  '搭建小程序架构，实现多端统一开发。',
+                  '构建电子政务中后台数据可视化平台，实现报表下载与大屏适配。',
+                  '推进前端流程规范化，引入 eslint、commit 规则，提高代码质量。'
                 ]
               }
             ]
@@ -102,86 +116,117 @@ export const locales: Record<'zh' | 'en', ResumeContent> = {
         title: '教育经历',
         schools: [
           {
-            name: '上海交通大学',
-            period: '2015-09 ~ 2019-06',
-            major: '计算机科学与技术',
-            degree: '学士'
+            name: '东南大学',
+            period: '2015.09 - 2019.06',
+            major: '计算机科学与工程',
+            degree: '本科'
           }
         ]
       },
       skills: {
-        title: '技能特长',
+        title: '专业技能',
         categories: [
-          {
-            name: '前端框架',
-            items: 'Vue.js, Nuxt.js, React'
-          },
-          {
-            name: 'UI/CSS',
-            items: 'Tailwind CSS, Element UI, SCSS'
-          },
-          {
-            name: '工具链',
-            items: 'Webpack, Vite, Git'
-          },
-          {
-            name: '其他',
-            items: 'TypeScript, Node.js, Docker'
-          }
+          { name: '前端开发', items: 'HTML, CSS/Less/Sass, JavaScript, TypeScript' },
+          { name: '前端框架', items: 'Vue3, Vuex, React, 小程序, Hybrid 开发' },
+          { name: '数据可视化', items: 'Echarts' },
+          { name: '工程化', items: 'Git, Webpack, eslint' },
+          { name: '计算机基础', items: '计算机网络, 算法结构, 数据库' }
         ]
       }
     }
   },
   en: {
-    name: 'Ao Tianyu',
-    status: 'Currently Employed',
-    location: 'Shanghai',
-    role: 'Frontend/Backend/Full-Stack Developer',
+    name: 'Wei Luo',
+    status: 'Seeking Opportunities',
+    location: 'Beijing, China',
+    role: 'Frontend Developer',
     contact: {
-      phone: '1752127****',
-      email: 'beichu.zhang@gmail.com'
+      phone: '+86 1565175****',
+      email: 'weiluo384@outlook.com'
     },
-    skillTags: ['Go', 'TypeScript', 'Node.js', 'Python', 'Vue'],
+    skillTags: [
+      'Python', 'SQL', 'JavaScript', 'Node.js', 'Java', 'Vue', 'React', 'Taro',
+      'Echarts', 'Canvas', 'BI', 'Konva', 'Matlab', 'HTML', 'CSS', 'MongoDB', 'IndexDB',
+      'pnpm', 'yarn', 'npm'
+    ],
     sections: {
       experience: {
         title: 'Work Experience',
         companies: [
           {
-            name: 'ByteDance',
-            period: 'Aug 2023 - Present',
-            position: 'Technical Expert',
-            techStack: ['Go', 'MySQL', 'MongoDB', 'Redis', 'RocketMQ'],
+            name: 'Li Auto Inc.',
+            period: 'May 2023 – May 2024',
+            position: 'Frontend Developer',
+            techStack: ['Vue', 'Echarts', 'Low-Code', 'Canvas', 'Svelte', 'Konva'],
             projects: [
               {
-                title: 'Internationalization Transformation',
+                title: 'Supply Chain Data Visualization Platform',
                 details: [
-                  'Migrated numerous business domain names within the data platform according to compliance requirements, designed traffic switching solutions and resolved cross-network proxy issues through DNS hijacking',
-                  'Resolved business data compliance transformation, proposed universal technical solutions and improvement processes to ensure business continuity',
-                  'Upgraded multilingual solution: migrated platform language services to company infrastructure, provided complete migration and iteration solution, ensuring smooth transition and legacy service retirement',
-                  'Assisted in troubleshooting overseas environment access issues, such as website accessibility and blank screen analysis'
+                  'Developed a visualization platform using Echarts and Low-Code frameworks, reducing repetitive development and improving work order tracking efficiency by 15%.'
                 ]
               },
               {
-                title: 'Third-party Cookie Solution',
+                title: 'Cross-Platform Image Annotation Tools',
                 details: [
-                  'Explored all current third-party cookie solutions, conducted interviews and research across platform businesses, ultimately abstracting, organizing, and providing multiple solutions covering all scenarios'
+                  'Designed and developed an image annotation tool with Canvas, Konva, and Svelte, enabling image scaling, annotation, and downloading, significantly reducing frontend feature development time.'
                 ]
               },
               {
-                title: 'Collaboration Service',
+                title: 'LLM-powered Chatbot Development',
                 details: [
-                  'Responsible for collaboration and synchronization service development, implementing engine capabilities for conflict resolution and data acquisition; sync service ensures ordering and reliability through push-pull combination',
-                  'Optimized weak network performance through public domain names, improving overseas user end-to-end success rate from 99.89% to 99.99%',
-                  'Improved reliability through service consolidation, pipeline simplification, and monitoring, achieving SLO >= 99.99%',
-                  'Developed analytics based on tracking data, providing business metrics including effective collaboration count, online users, and technical indicator dashboards'
+                  'Contributed to frontend development for a chatbot powered by LLM, supporting markdown, charts, code blocks, links, and multimedia, enhancing user experience.'
+                ]
+              }
+            ]
+          },
+          {
+            name: 'Zuoyebang Education Technology Co., Ltd.',
+            period: 'October 2022 – February 2023',
+            position: 'Frontend Developer',
+            techStack: ['React', 'Material-UI', 'Echarts', 'Lottie', 'IndexedDB'],
+            projects: [
+              {
+                title: 'International Education Community Platform',
+                details: [
+                  'Built an education platform using React and Material-UI, integrating Echarts to facilitate quick data insight identification.'
                 ]
               },
               {
-                title: 'Message Center',
+                title: 'Frontend Animation Optimization',
                 details: [
-                  'Rewrote internal message center service to address architecture upgrade needs and overseas compliance deployment, achieving zero business impact during migration',
-                  'Consolidated and secured complex service architecture, resolving security issues through service merger and security audits',
-                  'Improved service reliability from manual recovery to automatic recovery, achieving SLO >= 99.99%, reducing message list API P90 latency from 80ms to 8ms'
+                  'Created interactive animations using React and Lottie, leveraging IndexedDB for caching, improving animation smoothness by 25%.'
+                ]
+              }
+            ]
+          },
+          {
+            name: 'ICBC Technology Co., Ltd.',
+            period: 'July 2019 – October 2022',
+            position: 'Frontend Developer',
+            techStack: ['Vue', 'VantUI', 'Taro', 'Echarts', 'Webpack', 'Element UI'],
+            projects: [
+              {
+                title: 'My Ningxia Digital Government Services',
+                details: [
+                  'Developed frontend features for a government-backed mobile app serving 10.65 million users, streamlining digital services.'
+                ]
+              },
+              {
+                title: 'Mobile Payment Platform',
+                details: [
+                  'Built a payment system supporting Alipay, WeChat, UnionPay, and e-wallets, enhancing user convenience and engagement.'
+                ]
+              },
+              {
+                title: 'Frontend Monitoring System',
+                details: [
+                  'Developed a monitoring system to capture user behavior and errors, reducing loading time from 4s to 2s based on First Content Paint (FCP), significantly improving retention.'
+                ]
+              },
+              {
+                title: 'Code Quality & Review',
+                details: [
+                  'Conducted code reviews with ESLint and implemented Sonar quality gates, leading to a 30% bug reduction according to Jira statistics.'
                 ]
               }
             ]
@@ -192,32 +237,20 @@ export const locales: Record<'zh' | 'en', ResumeContent> = {
         title: 'Education',
         schools: [
           {
-            name: 'Shanghai Jiao Tong University',
-            period: 'Sep 2015 - Jun 2019',
-            major: 'Computer Science and Technology',
-            degree: "Bachelor's Degree"
+            name: 'Southeast University',
+            period: 'August 2015 – June 2019',
+            major: 'Computer Science & Technology',
+            degree: 'Bachelor of Engineering'
           }
         ]
       },
       skills: {
-        title: 'Technical Skills',
+        title: 'Skills',
         categories: [
-          {
-            name: 'Frontend Frameworks',
-            items: 'Vue.js, Nuxt.js, React'
-          },
-          {
-            name: 'UI/CSS',
-            items: 'Tailwind CSS, Element UI, SCSS'
-          },
-          {
-            name: 'Tool Chain',
-            items: 'Webpack, Vite, Git'
-          },
-          {
-            name: 'Others',
-            items: 'TypeScript, Node.js, Docker'
-          }
+          { name: 'Programming Languages', items: 'Python, SQL, JavaScript, Node.js, Java' },
+          { name: 'Frontend Frameworks', items: 'Vue, React, Taro' },
+          { name: 'Data Visualization', items: 'Echarts, Canvas, BI, Konva, Matlab' },
+          { name: 'Development Tools', items: 'pnpm, yarn, npm, MongoDB, IndexedDB' }
         ]
       }
     }
