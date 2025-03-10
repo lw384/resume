@@ -4,20 +4,20 @@
 
 @layer components {
   .resume-container {
-    @apply max-w-[21cm] mx-auto bg-white shadow-lg my-8 p-8;
+    @apply max-w-[21cm] mx-auto bg-white shadow-lg my-8 p-8 relative;
     min-height: 29.7cm;
   }
   
   .resume-header {
-    @apply text-center mb-8;
+    @apply mb-8;
   }
   
   .resume-name {
-    @apply text-4xl font-bold mb-4;
+    @apply text-4xl font-bold;
   }
   
   .resume-contact {
-    @apply text-gray-600 space-x-4;
+    @apply text-gray-600;
   }
   
   .resume-section {
